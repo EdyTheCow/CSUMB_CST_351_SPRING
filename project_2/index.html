@@ -4,15 +4,79 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <style>
+
+    body {
+      background-color: #f8f9fa;
+    }
     .carousel-item{
         height: 400px;
     }
     .carousel-item img{
         height: 400px;
+    }
+
+    .nav-item {
+
+    }
+
+    .nav-link {
+      color: #FFF !important;
+      font-size: 20px;
+
+    }
+
+    .nav-link:hover {
+      font-weight: bold !important;
+    }
+
+    .active {
+      font-weight: bold !important;
+    }
+
+    .material-icons.md-18 {
+      font-size: 25px;
+      vertical-align: middle;
+      padding-bottom: 7px;
+    }
+
+    .donate {
+      color: #FFC0CB !important;
+    }
+
+
+    .pulsate {
+        -webkit-animation: pulsate 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0.5;
+    }
+    @-webkit-keyframes pulsate {
+        0% {
+            opacity: 0.5;
+        }
+        50% {
+            opacity: 1.0;
+        }
+        100% {
+            opacity: 0.5;
+        }
+    }
+
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button.btn {
+      margin-top: auto;
+    }
+
+    .footer-bg {
+      background-color: #FFF;
     }
 
   </style>
@@ -23,47 +87,50 @@
     <img src="assets/img/logo.jpg" alt="" width="70%">
     </center>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Programs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Donate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Volunteer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Special events</a>
-            </li>
-          </ul>
-        </div>
-        </div>
+
+      <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary main-nav">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="navbar-collapse collapse nav-content order-2 w-100 justify-content-center" id="navbarNavDropdown" >
+                  <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="material-icons md-18">house</i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="material-icons md-18">people</i> About us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="material-icons md-18">event</i> Programs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="donate pulsate material-icons md-18">favorite</i> Donate</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="material-icons md-18">emoji_people</i> Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="material-icons md-18">flag</i> Special events</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
       </nav>
 
 
 
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Welcome to Gathering for Women</h1>
-          <p class="lead">Thank you for your kindness...your concern for others...your group has restored my belief there is hope for humanity. You are each special people changing lives of others."</p>
+          <center>
+          <h1 class="display-4">Welcome</h1>
+          <p class="lead">"Thank you for your kindness...your concern for others...your group has restored my belief there is hope for humanity. You are each special people changing lives of others."</p>
+          </center>
         </div>
       </div>
 
 
-
+        <br>
 
 
       <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
@@ -114,12 +181,16 @@
 <br>
 <br>
 
+<center>
+<h1 class="display-4">Message from the Executive Director</h1>
+</center>
+
+
+
 
       <div class="container">
 
-        <center>
-        <h1>Message from the Executive Director</h1>
-        </center>
+
 
         <br>
 
@@ -143,74 +214,143 @@
                 Please visit my page for more about current activities at Gathering for Women. Thank you for your support!
               </p>
 
-              <p class="card-text">
-                Staci M. Alziebler-Perkins
-                Executive Director
-              </p>
-
 
             </div>
           </div>
         </div>
       </div>
-
-
       </div>
 
+
+<br>
+
+<center>
+<h1 class="display-4">Our Services</h1>
+</center>
+
+<br>
 
       <div class="container">
 
-      <div class="row row-cols-1 row-cols-md-2">
-        <div class="col mb-4">
+
+        <div class="card-deck">
           <div class="card">
             <img src="assets/img/service_img_1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Food Service</h5>
-              <p class="card-text">
-                8:00 a.m. - 9:30 a.m. Breakfast (Monday - Friday)
-                Hot Lunch is served Monday - Thursday
-                12:00 noon – 1:30 p.m.
-                Brown Bag lunch is served on Fridays.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button" class="btn btn-primary">Read more</button>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
           <div class="card">
             <img src="assets/img/service_img_2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <button type="button" class="btn btn-primary">Read more</button>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
           <div class="card">
             <img src="assets/img/service_img_3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <button type="button" class="btn btn-primary">Read more</button>
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+
+<br>
+
+        <div class="card-deck">
           <div class="card">
             <img src="assets/img/service_img_4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button" class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/service_img_5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <button type="button" class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/img/service_img_6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <button type="button" class="btn btn-primary">Read more</button>
             </div>
           </div>
         </div>
-      </div>
-      </div>
+
+<br>
+<br>
+<br>
 
 
+</div>
 
-    <script type="text/javascript">!function(){var b=function(){window.__AudioEyeSiteHash = "595e914decb220ee05d7b0508f569e4f"; var a=document.createElement("script");a.src="https://wsmcdn.audioeye.com/aem.js";a.type="text/javascript";a.setAttribute("async","");document.getElementsByTagName("body")[0].appendChild(a)};"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",b):window.attachEvent&&window.attachEvent("onload",b):b()}();</script>
+<div class="footer-bg">
+
+<footer class="container py-5">
+  <div class="row ">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">!function(){var b=function(){window.__AudioEyeSiteHash = "595e914decb220ee05d7b0508f569e4f"; var a=document.createElement("script");a.src="https://wsmcdn.audioeye.com/aem.js";a.type="text/javascript";a.setAttribute("async","");document.getElementsByTagName("body")[0].appendChild(a)};"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",b):window.attachEvent&&window.attachEvent("onload",b):b()}();</script>
+
   </body>
 </html>
