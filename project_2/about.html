@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://use.fontawesome.com/9db4f5fbe5.js"></script>
+  </head>
+
+  <style>
+
+    body {
+      background-color: #f8f9fa;
+    }
+    .carousel-item{
+        height: 400px;
+    }
+    .carousel-item img{
+        height: 400px;
+    }
+
+    .nav-item {
+      padding-left: 10px;
+    }
+
+    .nav-link {
+      color: #FFF !important;
+      font-size: 20px;
+
+    }
+
+    .nav-link:hover {
+      font-weight: bold !important;
+    }
+
+    .active {
+      font-weight: bold !important;
+    }
+
+    .material-icons.md-18 {
+      font-size: 25px;
+      vertical-align: middle;
+      padding-bottom: 7px;
+    }
+
+    .donate {
+      color: #FF163F !important;
+    }
+
+
+    .pulsate {
+        -webkit-animation: pulsate 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0.5;
+    }
+    @-webkit-keyframes pulsate {
+        0% {
+            opacity: 0.5;
+        }
+        50% {
+            opacity: 1.0;
+        }
+        100% {
+            opacity: 0.5;
+        }
+    }
+
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button.btn {
+      margin-top: auto;
+    }
+
+    .footer-bg {
+      background-color: #FFF;
+    }
+
+  </style>
+
+  <body>
+
+    <center>
+    <img src="assets/img/logo/logo_simple_text.svg" alt="" width="40%" style="padding: 30px;">
+    </center>
+
+
+      <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark main-nav">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="navbar-collapse collapse nav-content order-2 w-100 justify-content-center" id="navbarNavDropdown" >
+                  <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html"><i class="material-icons md-18">house</i> Home</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="about.html"><i class="material-icons md-18">people</i> About us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="material-icons md-18">event</i> Programs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="volunteer.html"><i class="material-icons md-18">emoji_people</i> Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="material-icons md-18">flag</i> Special events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="donate.html"><i class="donate pulsate material-icons md-18">favorite</i> Donate</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <center>
+          <h1 class="display-4">About us</h1>
+          <p class="lead">Gathering for Women is a caring community…</p>
+          </center>
+        </div>
+      </div>
+
+
+<div class="container">
+
+  <div class="card mb-3">
+    <img src="https://i.imgur.com/YVdG45K.png" width="50%" class="card-img-top" alt="...">
+    <div class="card-body">
+      <ul>
+        <li>Where homeless women can get a hot meal, free clothing and limited emergency assistance.</li>
+        <li>Where health, mental health, and other service providers can connect with homeless women to offer them help.</li>
+        <li>Where homeless women can learn how to keep themselves safe and healthy.</li>
+        <li>Where the community can learn from homeless women about what they need.</li>
+        <li>Where housing providers can connect with, screen, and place women into permanent housing.</li>
+      </ul>
+
+      <p class="card-text">Gathering for Women is a non-profit organization funded through grants and individual and organizational contributions. We also accept donations of food, warm clothing, rain gear, camping equipment (tarps, sleeping bags and tents), and toiletries such as small containers of sunscreen, hand sanitizers, and deodorants.</p>
+      <p class="card-text">Mission: Providing homeless women with supportive resources and a caring community.</p>
+      <p class="card-text">Vision: Our vision is that the homeless and hungry have a place on the Monterey Peninsula where they can access food, clothing, a caring community, and connections to resources and services.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+
+<div class="footer-bg">
+
+<footer class="container py-5">
+  <div class="row ">
+    <div class="col-12 col-md">
+      <img width="100" src="assets/img/logo/logo_notext.svg" alt="">
+      <!--svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg-->
+
+    </div>
+    <div class="col-6 col-md">
+      <h5>Our services</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Food Service</a></li>
+        <li><a class="text-muted" href="#">Case Management</a></li>
+        <li><a class="text-muted" href="#">Clothes Closet</a></li>
+        <li><a class="text-muted" href="#">Guest Showers</a></li>
+        <li><a class="text-muted" href="#">Clothing Donation</a></li>
+        <li><a class="text-muted" href="#">Day Center Hours</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Social</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://www.instagram.com/gatheringforwomen/?hl=en">Instagram</a></li>
+        <li><a class="text-muted" href="#">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Hours</h5>
+      <ul class="list-unstyled text-small">
+        <p><b>M-Th:</b> 8am - 4pm <br ><b>F:</b> 8am - 2pm</p>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md">
+      <h5>Contact us</h5>
+      <ul class="list-unstyled text-small">
+        <p><i class="material-icons md-18">email</i> <a style="font-size:13px;" href="mailto:info@gatheringforwomen.org">info@gatheringforwomen.org</a> <br> <i class="material-icons md-18">phone</i> 831-241-6154</p>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">!function(){var b=function(){window.__AudioEyeSiteHash = "595e914decb220ee05d7b0508f569e4f"; var a=document.createElement("script");a.src="https://wsmcdn.audioeye.com/aem.js";a.type="text/javascript";a.setAttribute("async","");document.getElementsByTagName("body")[0].appendChild(a)};"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",b):window.attachEvent&&window.attachEvent("onload",b):b()}();</script>
+
+  </body>
+</html>
